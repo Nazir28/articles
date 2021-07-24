@@ -1,0 +1,57 @@
+/*xl*/
+@media only screen and (max-width: 1200px){
+}
+
+/*lg*/
+@media only screen and (max-width: 992px){
+    aside {
+        padding: 30px 0px !important;
+        top: 0px;
+        transform: translateX(-100%);
+        z-index: 102 !important;
+    }
+    .openSidebar {
+        animation: openSidebar .3s ease-out 0s 1 forwards;
+    }
+    @keyframes openSidebar {
+        0%{
+            transform: translateX(-100%);
+            opacity: .8;
+        }
+        100%{
+            transform: translateX(0px);
+            opacity: 1;
+        }
+    }
+    .closeSidebar {
+        animation: closeSidebar .3s ease-out 0s 1 forwards;
+    }
+    @keyframes closeSidebar {
+        0%{
+            transform: translateX(0px);
+            opacity: 1;
+        }
+        100%{
+            transform: translateX(-100%);
+            opacity: .8;
+        }
+    }
+    .sidebar-text{
+        display: none   ;
+    }
+    #main, header .main-header{
+        padding: 0px !important;
+    }
+}
+/*md*/
+@media only screen and (max-width: 768px){
+}
+/*sm*/
+@media only screen and (max-width: 576px){
+    aside{
+        width: 100% !important;
+    }
+}
+@media only screen and (max-width: 380px){
+    
+}

@@ -1,0 +1,101 @@
+aside {
+    width: 300px;
+    height: 100%;
+    position: fixed;
+    padding-top: 0px;
+    top: 0px;
+    left: 0px;
+    z-index: 99;  
+    background-color: white;
+    
+}
+#sidebar{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    padding: 0px 30px;
+    padding-bottom: 30px;
+    
+}
+#sidebar h2{
+    font-size: 18px;
+    line-height: 26px;
+    color: #808289;
+    text-align: center;
+}
+#sidebar ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+#sidebar ul li a{
+    font-size: 16px;
+    line-height: 18px;
+    color: #383A3E;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    background-color: #FAFAFA;
+    position: relative;
+    overflow: hidden;
+    transition: all .2s linear
+}
+
+#sidebar ul li a:before{
+    content: "";
+    width: 0px;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    display: inline-block;
+    background: #EB445A;
+    
+}
+#sidebar ul li a:hover {
+    text-decoration: none;
+    box-shadow: 0px 0px 8px 1px #f5f5f5;
+    background-color: white;
+    color: #EB445A;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: all .2s linear
+}
+#sidebar ul li a:hover::before, #sidebar ul li a.active:before{
+    width: 25px ;
+    transition: all .2s linear;
+}
+#sidebar ul li a:hover path{
+    stroke: #EB445A;
+    transition: all .2s linear
+}
+#sidebar ul li a.active{
+    box-shadow: 0px 0px 4px 1px #f5f5f5, 0px 4px 4px rgba(0,0,0, .1);
+    background-color: white;
+    color: #EB445A;
+    border-radius: 10px;
+    text-decoration: none;
+}
+#sidebar ul li a.active svg path{
+    stroke: #EB445A;
+}
+#sidebar ul li a span{
+    display: inline-block;
+    margin-right: 10px;
+}
+aside h2{
+    font-size: 18px;
+    line-height: 26px;
+    color: #808289;
+    text-align: center;
+    margin-bottom: 0px;
+}
+@media only screen and (max-height: 472px){
+    #sidebar ul li:last-child a{
+        margin-bottom: 50px;
+    }
+}

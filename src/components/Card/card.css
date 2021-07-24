@@ -1,0 +1,105 @@
+
+.custm-card .card-img-top{
+    min-height: 180px;
+}
+.custm-card .card {
+    box-shadow: 0px 0px 20px 2px #e5e5e5;
+    border: 0px solid transparent;
+    border-radius: 10px;
+    height: 100%;
+}
+.custm-card .card h5 a{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-box;
+    display: -o-box;
+    -webkit-line-clamp: 2;
+    -moz-line-clamp: 2;
+    -ms-line-clamp: 2;
+    -o-line-clamp: 2;
+    -webkit-box-orient: vertical;  
+    -moz-box-orient: vertical;  
+    -ms-box-orient: vertical;  
+    -o-box-orient: vertical;  
+    overflow: hidden;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+    color: black;
+}
+.custm-card .card h5 a:hover{
+    color: #EB445A;
+    text-decoration: none;
+}
+.custm-card .card p{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-box;
+    display: -o-box;
+    -webkit-line-clamp: 2;
+    -moz-line-clamp: 2;
+    -ms-line-clamp: 2;
+    -o-line-clamp: 2;
+    -webkit-box-orient: vertical;  
+    -moz-box-orient: vertical;  
+    -ms-box-orient: vertical;  
+    -o-box-orient: vertical;  
+    overflow: hidden;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #383A3E;
+}
+.custm-card .card-footer{
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.custm-card .card-footer .btn{
+    padding: 0px;
+}
+.custm-card .card-footer .btn:focus{
+    box-shadow: 0px 0px 0px transparent;
+}
+  
+.custm-card .card-footer .btn-ic{
+    width: 30px;
+    height: 28px;
+    color: white;
+    padding: 0px;
+    border-radius: 2px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+    font-family: serif;
+}
+.custm-card .card-footer .btn-save:hover svg path{stroke: #EB445A;}
+.custm-card .card-footer .btn-save:active svg path,.custm-card .card-footer .btn-save.active svg path{
+    stroke: #EB445A;
+    fill: #EB445A;
+}
+.custm-card .card-footer .send-descover .dropdown-menu{
+    border: 0px solid transparent;
+    box-shadow: 0px 0px 10px #dddcdc;
+}
+.custm-card .card-footer .send-descover.show .btn-save svg path{
+    stroke: #EB445A;
+    fill: #EB445A;
+    transition: all .2s linear
+}
+.custm-card .card-footer .send-descover .dropdown-item{
+    display: flex;
+    align-items: center;
+}
+.custm-card .card-footer .send-descover .dropdown-item span{
+    margin-right: 5px;
+}
+.custm-card .card-footer .send-descover .dropdown-item:active{
+    background-color: #EB445A;
+    color: white;
+}
+.custm-card .card-footer .send-descover .dropdown-item:active svg path{
+    fill: white;
+}
